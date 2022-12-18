@@ -1,11 +1,10 @@
 import React from 'react'
 import { Box, Container } from '@mui/system'
-import Loader from './UI/Loader';
-import { useState, useEffect, useRef } from 'react'
-import useFetching from '../hooks/useFetching';
-import useInfiniteScroll from '../hooks/useInfiniteScroll';
-import FilmItem from '../components/FilmItem';
-import FilmsService from '../API/FilmsService';
+import Loader from '../../UI/Loader';
+import { useRef } from 'react'
+import useInfiniteScroll from '../../../hooks/useInfiniteScroll';
+import FilmItem from '../FilmItem/index';
+import FilmsService from '../../../API/FilmsService';
 
 function InfiniteScroll(fetchApi) {
   const targetRef = useRef(null)

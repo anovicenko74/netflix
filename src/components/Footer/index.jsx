@@ -1,10 +1,8 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
 import { useTheme } from '@emotion/react'
-import useSettings from '../hooks/useSettings'
 function Footer() {
     const theme = useTheme()
-    const { toggleTheme } = useSettings()
     return (
         <footer >
             <Box

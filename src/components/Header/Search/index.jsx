@@ -5,13 +5,13 @@ import {
 } from '@mui/material';
 import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-router-dom'
-import Loader from './UI/Loader';
+import Loader from '../../UI/Loader';
 import { useTheme } from '@mui/material/styles';
 import { useState, useEffect, useRef } from 'react';
-import useFetching from '../hooks/useFetching'
-import useDebounce from '../hooks/useDebounce'
-import { getFilmPath } from './Routes'
-import FilmsService from '../API/FilmsService';
+import useFetching from '../../../hooks/useFetching'
+import useDebounce from '../../../hooks/useDebounce'
+import { getFilmPath } from '../../Routes'
+import FilmsService from '../../../API/FilmsService';
 
 function Serch() {
     const theme = useTheme();

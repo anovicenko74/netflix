@@ -2,15 +2,11 @@ import { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import useFetching from '../hooks/useFetching';
 import useObjectParams from '../hooks/useObjectParams';
-
-import FilmItem from '../components/FilmItem'
+import FilmItem from '../components/FilmsList/FilmItem'
 import Loader from '../components/UI/Loader'
 import Pagination from '../components/UI/Pagination'
 import SearchPanel from '../components/SearchPanel'
-
 import { Box, Container } from '@mui/material';
-
-
 import FilmsService from '../API/FilmsService';
 
 function Moviespage() {
@@ -43,6 +39,9 @@ function Moviespage() {
     <>
 
       <Container
+        sx={{
+          padding: '15px 0 0 0'
+        }}
       >
         <SearchPanel />
         {

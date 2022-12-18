@@ -9,9 +9,9 @@ import {
 import { useTheme } from '@emotion/react';
 
 import { Link } from 'react-router-dom'
-import { getFilmPath } from '../components/Routes';
+import { getFilmPath } from '../Routes';
 
-import FilmItem from './FilmItem';
+import FilmItem from '../FilmItem';
 
 function FilmsList(i) {
   return (

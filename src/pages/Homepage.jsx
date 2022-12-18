@@ -3,7 +3,7 @@ import Loader from '../components/UI/Loader'
 import { useState, useEffect } from 'react'
 import useFetching from '../hooks/useFetching'
 import FilmsService from '../API/FilmsService';
-import InfiniteScroll from '../components/InfiniteScroll';
+import InfiniteScroll from '../components/FilmsList/InfiniteScroll';
 
 function Homepage() {
     const [actual, setActual] = useState([])

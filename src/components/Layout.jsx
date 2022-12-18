@@ -1,10 +1,12 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
+import { useTheme } from "@emotion/react";
 
 function Layout() {
-    return (
+    const theme = useTheme()
 
+    return (
         <div style={
             {
                 display: "flex",
@@ -18,7 +20,8 @@ function Layout() {
         }>
             <Header></Header>
             <main style={{
-                flex: '1 1 auto', //background: theme.palette.primary.main 
+                flex: '1 1 auto',
+                background: theme.palette.primary.main
             }}>
                 <Outlet />
             </main>

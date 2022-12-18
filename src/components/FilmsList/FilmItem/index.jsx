@@ -9,7 +9,7 @@ import {
 import { useTheme } from '@emotion/react';
 
 import { Link } from 'react-router-dom'
-import { getFilmPath } from '../components/Routes';
+import { getFilmPath } from '../../Routes';
 
 function FilmItem({ film, ...props }) {
     const theme = useTheme()

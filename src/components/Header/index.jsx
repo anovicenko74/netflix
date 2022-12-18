@@ -12,8 +12,8 @@ import Search from './Search';
 import ThemeSwitcher from './ThemeSwitcher';
 import { Link } from 'react-router-dom'
 import { useTheme } from '@emotion/react';
-import logo from '../images/logo.png'
-import { filterRoutes } from './Routes';
+import logo from '../../images/logo.png'
+import { filterRoutes } from '../Routes';
 
 const Header = () => {
     const theme = useTheme()

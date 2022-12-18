@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from '@emotion/react'
-import useSettings from '../hooks/useSettings'
+import useSettings from '../../../hooks/useSettings'
 import { Switch } from '@mui/material'
 
 function ThemeSwitcher() {
